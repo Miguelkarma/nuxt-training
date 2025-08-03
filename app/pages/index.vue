@@ -1,6 +1,8 @@
-<script>
-const { sayHello } = useUtils();
-sayHello();
+<script setup lang="ts">
+const { $sayHello } = useNuxtApp();
+$sayHello("Guillermo");
+//check if the plugin is available
+// console.log(useNuxtApp());
 </script>
 <template>
   <div class="container py-3 mx-auto Main">
