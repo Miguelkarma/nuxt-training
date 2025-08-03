@@ -3,6 +3,9 @@ const { $sayHello } = useNuxtApp();
 $sayHello("Guillermo");
 //check if the plugin is available
 // console.log(useNuxtApp());
+definePageMeta({
+  middleware: "auth",
+});
 </script>
 <template>
   <div class="container py-3 mx-auto Main">

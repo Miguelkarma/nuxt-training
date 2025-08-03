@@ -1,6 +1,10 @@
 <script>
 const { sayHello } = useUtils();
 sayHello();
+
+definePageMeta({
+  middleware: "auth",
+});
 </script>
 <template>
   <div class="container py-3 mx-auto Main">
