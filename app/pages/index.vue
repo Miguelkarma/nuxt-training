@@ -1,3 +1,4 @@
 <template>
-  <div class="Main">Main page</div>
+  <div class="Main">Hello nuxt 3</div>
+  <IconsBell />
 </template>
