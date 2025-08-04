@@ -14,8 +14,14 @@ console.log(store);
 
 const response = await $fetch("/api/hello");
 console.log(response);
+
+const { data: products } = await useFetch("api/products", {
+  transform: (_products) => (_products as { data: any }).data,
+});
+//for javascript part
+// console.log(toRaw(products.value));
 </script>
 
 <template>
-  <div class="prose mx-auto">sup</div>
+  <div class="prose mx-auto">{{ products }}</div>
 </template>
